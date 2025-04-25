@@ -18,7 +18,7 @@
                     <li><a href="#estrategias">Estratégias</a></li>
                     <li><a href="#resultados">Resultados</a></li>
                     <li><a href="#perfil">Meu Perfil</a></li>
-                    <li><a href="index.html">Sair</a></li>
+                    <li><a href="{{ url_for('index') }}">Sair</a></li>
                 </ul>
             </nav>
         </header>
@@ -182,7 +182,7 @@
                     <div class="upgrade-message">
                         <h4>Funcionalidade Premium</h4>
                         <p>A estratégia de Ciclo de Dezenas Fora está disponível apenas para assinantes do plano Premium.</p>
-                        <a href="pagamento.html?plano=premium" class="btn btn-primary">Fazer Upgrade</a>
+                        <a href="{{ url_for('pagamento') }}?plano=premium" class="btn btn-primary">Fazer Upgrade</a>
                     </div>
                 </div>
             </div>

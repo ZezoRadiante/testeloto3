@@ -18,7 +18,7 @@
                     <li><a href="#planos">Planos</a></li>
                     <li><a href="#como-funciona">Como Funciona</a></li>
                     <li><a href="#resultados">Resultados</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -74,7 +74,7 @@
                         <li>Análise de padrões</li>
                         <li>Suporte por e-mail</li>
                     </ul>
-                    <a href="pagamento.html?plano=basico" class="btn btn-primary">Assinar Agora</a>
+                    <a href="{{ url_for('pagamento') }}?plano=basico" class="btn btn-primary">Assinar Agora</a>
                 </div>
                 
                 <div class="plan-card">
@@ -87,7 +87,7 @@
                         <li>Recomendações personalizadas</li>
                         <li>Prioridade no suporte</li>
                     </ul>
-                    <a href="pagamento.html?plano=premium" class="btn btn-primary">Assinar Agora</a>
+                    <a href="{{ url_for('pagamento') }}?plano=premium" class="btn btn-primary">Assinar Agora</a>
                 </div>
             </div>
         </section>
